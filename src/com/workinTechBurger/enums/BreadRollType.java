@@ -1,4 +1,4 @@
-package com.workinTechBurger;
+package com.workinTechBurger.enums;
 
 public enum BreadRollType {
     PINK_DRESS,

@@ -8,6 +8,7 @@ import com.workinTechBurger.model.DeluxeBurger;
 import com.workinTechBurger.model.Drinks;
 import com.workinTechBurger.model.Hamburger;
 import com.workinTechBurger.enums.Meat;
+import com.workinTechBurger.model.HealthyBurger;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,5 +27,14 @@ public class Main {
         db.addHamburgerAddition("Should not do this", 50.53);
 
         db.itemizeHamburger();
+
+
+
+        HealthyBurger healthyBurger = new HealthyBurger("Healthy Vegan Burger", Meat.VEGAN,5.67,BreadRollType.YELLOW_DELUXE);
+
+        healthyBurger.addHamburgerAddition("Egg", 5.43);
+        healthyBurger.HealthyAddAdditions("Lentils", 3.41);
+
+        healthyBurger.itemizeHamburger();
     }
 }
